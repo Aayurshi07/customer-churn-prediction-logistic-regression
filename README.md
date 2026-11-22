@@ -1,26 +1,26 @@
 # Customer Churn Prediction using RFM Features & Logistic Regression
 
-## 📌 Overview
+## Overview
 This project extends RFM-based customer segmentation into predictive modeling — 
 building a Logistic Regression classifier to predict customer churn based on 
 purchasing behavior, enabling proactive retention strategies.
 
-## 🎯 Business Problem
+## Business Problem
 Identifying customers likely to churn *before* they go silent allows a business 
 to intervene early with targeted retention campaigns, rather than reacting after 
 revenue has already been lost.
 
-## 🛠️ Tools & Skills Used
+## Tools & Skills Used
 - **Python** (Pandas, NumPy) — feature engineering
 - **Scikit-learn** — Logistic Regression, StandardScaler, train-test split, 
   classification evaluation metrics
 - **Data Analysis** — class imbalance handling, precision-recall trade-off analysis
 
-## 📊 Dataset
+## Dataset
 Built on the same Online Retail Dataset (UCI) used in the RFM segmentation project, 
 extended with a churn label.
 
-## 🔍 Approach
+## Approach
 1. **Churn Definition:** Labeled customers as "Churned" if inactive for more than 
    180 days (Recency > 180), resulting in 860 churned vs. 3,478 active customers.
 2. **Feature Selection:** Used Frequency and Monetary as predictors (Recency was 
@@ -34,7 +34,7 @@ extended with a churn label.
      **91%** (correctly identifying 156 of 172 churned customers), with a 
      deliberate trade-off of lower precision (35%) and overall accuracy (64%).
 
-## 📈 Key Findings
+## Key Findings
 | Metric | Naive Model | Improved Model |
 |---|---|---|
 | Accuracy | 80% (misleading) | 64% |
@@ -46,11 +46,11 @@ of churn than Monetary (coefficient: -0.08) — customers who purchase infrequen
 are significantly more likely to churn, regardless of how much they've spent 
 historically.
 
-## 💡 Business Recommendation
+## Business Recommendation
 Retention efforts should prioritize **encouraging repeat purchases** over simply 
 targeting high-spending customers, since purchase frequency is the dominant 
 driver of churn risk. A high one-time spend does not protect against churn if 
 the customer doesn't return.
 
-## 📁 Files
+## Files
 - `churn_prediction_rfm.ipynb` — Full analysis notebook
