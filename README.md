@@ -24,6 +24,3 @@ The final model catches 156 of 172 churned customers. Precision is low, so it fl
 
 Frequency mattered much more than Monetary (coefficients -5.18 and -0.08). Customers who buy rarely churn more, even if they spent a lot before.
 
-## Files
-
-- customer_segmentation_rfm_km
