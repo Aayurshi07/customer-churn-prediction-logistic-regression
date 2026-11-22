@@ -26,4 +26,4 @@ Frequency mattered much more than Monetary (coefficients -5.18 and -0.08). Custo
 
 ## Files
 
-- churn_prediction_rfm.ipynb
+- customer_segmentation_rfm_km
